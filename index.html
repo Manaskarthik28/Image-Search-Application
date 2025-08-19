@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <link rel = "stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css">
+        <link rel = "stylesheet" href = "https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap">
+        <link rel = "stylesheet" href = "style.css">
+    </head>
+    <body>
+        <div class = "app-container">
+            <header>
+                <h1 style = "color:green;">
+                    My website
+                </h1>
+                <h2 style = "color:#000;">
+                    Image Search App
+                </h2>
+                <div class="search-bar">
+                    <input type="text" id="searchInput"
+                    placeholder="Search for images">
+                    <button onclick="searchImages()">
+                        Search
+                    </button>
+                </div>
+            </header>
+            <main id="imageContainer"
+            class = "animate__animated animate__fadeIn">
+        </main>
+            <div class = "load-more">
+                <button onclick="moreImgFn()">
+                    Generate More
+                </button>
+            </div>
+            </div>
+        <div id="imageModal" class="modal">
+            <span class="close" onclick="closePreFn()">
+                x
+            </span>
+            <img id = "modalImage" class="modal-content"
+            alt="Image Preview">
+        </div>
+        <script src = "script.js"></script>
+    </body>
+</html>
